@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+    <div class="container text-centr">
+        <h1 class="py-4"> Activity tracker</h1>
+    </div>
+    <div class="d-flex justify-content-center">
+
+        <div class="row mt-2">
+            <div class="col">
+                <input type="text" id="start-time" class="form-control center" placeholder="Start time"
+                    autocomplete="off">
+            </div>
+            <div class="col">
+                <input type="text" id="finish-time" class="form-control" placeholder="Finish time" autocomplete="off">
+            </div>
+            <div class="col">
+                <input type="text" id="distance" class="form-control" placeholder="Distance" autocomplete="off">
+            </div>
+            <div class="col">
+                <select id="active-type">
+                    <option value="None">Select active type</option>
+                    <option value="ID001">Run</option>
+                    <option value="ID003">Ride</option>
+                </select>
+            </div>
+            <div class="col">
+                <button class="btn btn-success px-5" id="btn-create">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="aktivity">
+        <div class="aktivity-list" id="activityList">
+        </div>
+        <div class="statistik">
+        <div class="aktivity-statistik" id="activityStatistik">
+                <h6 class="activity-title">Longest ride:</h2>
+            <div class="aktivity-statistik-ride" id="activityStatistikRide">
+                    
+            </div>
+            <h6 class="activity-title">Longest run:</h2>
+            <div class="aktivity-statistik-run" id="activityStatistikRun">
+            
+            </div>
+        </div>
+        <div class="distance-statistik">
+            <div class="distance-statistik-ride">
+            <h6>Total ride distance:</h5><div class="distance-ride" id="distanceRide"></div>
+            </div>
+            <div class="distance-statistik-run">
+            <h6>Total run distance:</h5><div class="distance-run" id="distanceRun"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- <script src="./axios.js"></script> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+
+</html>
