@@ -18,14 +18,14 @@
 
         <div class="row mt-2">
             <div class="col">
-                <input type="text" id="start-time" class="form-control center" placeholder="Start time"
+                <input maxlength='5' onkeyup="this.value = this.value.replace(/[^\d+|':']/g,'')" type="text" id="start-time" class="form-control center input-time" placeholder="Start time"
                     autocomplete="off">
             </div>
             <div class="col">
-                <input type="text" id="finish-time" class="form-control" placeholder="Finish time" autocomplete="off">
+                <input maxlength='5' onkeyup="this.value = this.value.replace(/[^\d+|':']/g,'')" type="text" id="finish-time" class="form-control input-time" placeholder="Finish time" autocomplete="off">
             </div>
             <div class="col">
-                <input type="text" id="distance" class="form-control" placeholder="Distance" autocomplete="off">
+                <input type="time-local" id="distance" class="form-control" placeholder="Distance" autocomplete="off">
             </div>
             <div class="col">
                 <select id="active-type">

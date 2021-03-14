@@ -25,7 +25,6 @@ let outputDistanceRun = ''
 
     const addBtn = document.querySelector('#btn-create');
 
-
 async function allData(){
         const startTime = document.querySelector('#start-time');
         const sTime  = startTime.value;
